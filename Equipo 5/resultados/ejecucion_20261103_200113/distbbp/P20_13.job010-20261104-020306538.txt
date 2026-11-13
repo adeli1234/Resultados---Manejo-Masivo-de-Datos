@@ -1,0 +1,1 @@
+DistSum P20_13.job010> sigma=[n:value=13,delta=20,limit=993; e:value=990,delta=-20,limit=0]value=4601445158400237076, duration=0(0ms)

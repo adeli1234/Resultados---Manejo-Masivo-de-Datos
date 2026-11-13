@@ -1,0 +1,23 @@
+# Archivos locales de editores y sistema operativo
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cachés y entornos Python (solo para herramientas auxiliares)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Configuración y credenciales locales
+.env
+.env.*
+!.env.example
+/.aws/
+
+# Las evidencias en resultados/, incluidos *.log y *.hex, se versionan.
+# Registro de un intento fallido durante la configuración
+/resultados/ejecucion_20261103_195534/

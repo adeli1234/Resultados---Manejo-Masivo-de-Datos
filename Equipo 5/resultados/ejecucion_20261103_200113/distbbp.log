@@ -1,0 +1,1310 @@
+org.apache.hadoop.util.RunJar.main(RunJar.java:241) started at Wed Nov 04 02:01:15 UTC 2026
+
+b = 1,000 (bits skipped)
+
+nThreads  = 2
+nJobs     = 1
+nParts    = 2 (MapSide)
+remoteDir = /tmp/distbbp_equipo5_remote_20261103_200113
+localDir  = /tmp/distbbp_equipo5_local_20261103_200113
+
+org.apache.hadoop.util.RunJar.main(RunJar.java:241) started at Wed Nov 04 02:01:15 UTC 2026
+
+Parsing /tmp/distbbp_equipo5_local_20261103_200113 ... DONE
+P8_1   => []
+P8_3   => []
+P8_5   => []
+P8_7   => []
+P20_21 => []
+P20_3  => []
+P20_5  => []
+P20_7  => []
+P20_9  => []
+P20_11 => []
+P20_13 => []
+P20_15 => []
+P20_17 => []
+P20_19 => []
+
+put Sum{P8_1: [n:value=1,delta=8,limit=393; e:value=999,delta=-20,limit=0], remaining=1}
+put Sum{P8_3: [n:value=3,delta=8,limit=395; e:value=994,delta=-20,limit=0], remaining=1}
+put Sum{P8_5: [n:value=5,delta=8,limit=397; e:value=989,delta=-20,limit=0], remaining=1}
+put Sum{P8_7: [n:value=7,delta=8,limit=399; e:value=984,delta=-20,limit=0], remaining=1}
+put Sum{P20_21: [n:value=21,delta=20,limit=1001; e:value=982,delta=-20,limit=0], remaining=1}
+put Sum{P20_3: [n:value=3,delta=20,limit=1003; e:value=1000,delta=-20,limit=0], remaining=1}
+put Sum{P20_5: [n:value=5,delta=20,limit=985; e:value=996,delta=-20,limit=0], remaining=1}
+put Sum{P20_7: [n:value=7,delta=20,limit=987; e:value=996,delta=-20,limit=0], remaining=1}
+put Sum{P20_9: [n:value=9,delta=20,limit=989; e:value=994,delta=-20,limit=0], remaining=1}
+put Sum{P20_11: [n:value=11,delta=20,limit=991; e:value=992,delta=-20,limit=0], remaining=1}
+put Sum{P20_13: [n:value=13,delta=20,limit=993; e:value=990,delta=-20,limit=0], remaining=1}
+put Sum{P20_15: [n:value=15,delta=20,limit=995; e:value=986,delta=-20,limit=0], remaining=1}
+put Sum{P20_17: [n:value=17,delta=20,limit=997; e:value=986,delta=-20,limit=0], remaining=1}
+put Sum{P20_19: [n:value=19,delta=20,limit=999; e:value=984,delta=-20,limit=0], remaining=1}
+
+             19ms (=19ms)          : execute 14 computation(s)
+            133ms (=133ms)         : starting P8_1.job000 ...
+  steps/parts = 49/2 = 24
+2026-11-04 02:01:15,879 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2026-11-04 02:01:15,923 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2026-11-04 02:01:15,923 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2026-11-04 02:01:15,984 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:01:16,041 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1411409748_0001
+2026-11-04 02:01:16,041 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:01:16,113 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P8_1.job000> sleep(10s)
+2026-11-04 02:01:16,113 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:01:16,116 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:16,116 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:16,116 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:16,117 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:01:16,134 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:01:16,134 INFO mapred.LocalJobRunner: Starting task: attempt_local1411409748_0001_m_000000_0
+2026-11-04 02:01:16,143 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:16,143 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:16,143 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:16,151 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:16,153 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@2873db97
+2026-11-04 02:01:16,158 INFO pi.DistSum: sigma=[n:value=1,delta=8,limit=201; e:value=999,delta=-20,limit=499]
+2026-11-04 02:01:16,159 INFO pi.DistSum: result=sigma=[n:value=1,delta=8,limit=201; e:value=999,delta=-20,limit=499]value=4603107625484982512, duration=0(0ms)
+2026-11-04 02:01:16,160 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:16,162 INFO mapred.Task: Task:attempt_local1411409748_0001_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:01:16,163 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:16,163 INFO mapred.Task: Task attempt_local1411409748_0001_m_000000_0 is allowed to commit now
+2026-11-04 02:01:16,164 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1411409748_0001_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_1.job000/out
+2026-11-04 02:01:16,165 INFO mapred.LocalJobRunner: result=sigma=[n:value=1,delta=8,limit=201; e:value=999,delta=-20,limit=499]value=4603107625484982512, duration=0(0ms)
+2026-11-04 02:01:16,165 INFO mapred.Task: Task 'attempt_local1411409748_0001_m_000000_0' done.
+2026-11-04 02:01:16,167 INFO mapred.Task: Final Counters for attempt_local1411409748_0001_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=281623
+		FILE: Number of bytes written=922285
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:16,167 INFO mapred.LocalJobRunner: Finishing task: attempt_local1411409748_0001_m_000000_0
+2026-11-04 02:01:16,168 INFO mapred.LocalJobRunner: Starting task: attempt_local1411409748_0001_m_000001_0
+2026-11-04 02:01:16,168 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:16,168 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:16,168 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:16,169 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:16,169 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@49ce0fa2
+2026-11-04 02:01:16,170 INFO pi.DistSum: sigma=[n:value=201,delta=8,limit=393; e:value=499,delta=-20,limit=0]
+2026-11-04 02:01:16,170 INFO pi.DistSum: result=sigma=[n:value=201,delta=8,limit=393; e:value=499,delta=-20,limit=0]value=4600055292333248347, duration=0(0ms)
+2026-11-04 02:01:16,170 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:16,171 INFO mapred.Task: Task:attempt_local1411409748_0001_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:01:16,171 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:16,171 INFO mapred.Task: Task attempt_local1411409748_0001_m_000001_0 is allowed to commit now
+2026-11-04 02:01:16,172 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1411409748_0001_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_1.job000/out
+2026-11-04 02:01:16,172 INFO mapred.LocalJobRunner: result=sigma=[n:value=201,delta=8,limit=393; e:value=499,delta=-20,limit=0]value=4600055292333248347, duration=0(0ms)
+2026-11-04 02:01:16,172 INFO mapred.Task: Task 'attempt_local1411409748_0001_m_000001_0' done.
+2026-11-04 02:01:16,172 INFO mapred.Task: Final Counters for attempt_local1411409748_0001_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=281870
+		FILE: Number of bytes written=922408
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:16,172 INFO mapred.LocalJobRunner: Finishing task: attempt_local1411409748_0001_m_000001_0
+2026-11-04 02:01:16,173 INFO mapred.LocalJobRunner: map task executor complete.
+          10405ms (=10.405s)       : starting P8_3.job001 ...
+  steps/parts = 49/2 = 24
+2026-11-04 02:01:26,114 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+          10407ms (=10.407s)       : P8_1.job000> timetaken=10.274s
+P8_1.job000> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P8_1.job000.txt
+DistSum P8_1.job000> sigma=[n:value=1,delta=8,limit=393; e:value=999,delta=-20,limit=0]value=4606299461692653726, duration=0(0ms)
+2026-11-04 02:01:26,121 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:01:26,127 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local575399118_0002
+2026-11-04 02:01:26,127 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:01:26,156 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P8_3.job001> sleep(10s)
+2026-11-04 02:01:26,157 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:01:26,157 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:26,157 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:26,157 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:26,157 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:01:26,159 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:01:26,160 INFO mapred.LocalJobRunner: Starting task: attempt_local575399118_0002_m_000000_0
+2026-11-04 02:01:26,160 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:26,160 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:26,160 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:26,161 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:26,162 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@7706d30b
+2026-11-04 02:01:26,163 INFO pi.DistSum: sigma=[n:value=3,delta=8,limit=203; e:value=994,delta=-20,limit=494]
+2026-11-04 02:01:26,163 INFO pi.DistSum: result=sigma=[n:value=3,delta=8,limit=203; e:value=994,delta=-20,limit=494]value=4601622227490994052, duration=0(0ms)
+2026-11-04 02:01:26,163 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:26,164 INFO mapred.Task: Task:attempt_local575399118_0002_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:01:26,164 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:26,164 INFO mapred.Task: Task attempt_local575399118_0002_m_000000_0 is allowed to commit now
+2026-11-04 02:01:26,165 INFO output.FileOutputCommitter: Saved output of task 'attempt_local575399118_0002_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_3.job001/out
+2026-11-04 02:01:26,165 INFO mapred.LocalJobRunner: result=sigma=[n:value=3,delta=8,limit=203; e:value=994,delta=-20,limit=494]value=4601622227490994052, duration=0(0ms)
+2026-11-04 02:01:26,165 INFO mapred.Task: Task 'attempt_local575399118_0002_m_000000_0' done.
+2026-11-04 02:01:26,166 INFO mapred.Task: Final Counters for attempt_local575399118_0002_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=563755
+		FILE: Number of bytes written=1841863
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:26,166 INFO mapred.LocalJobRunner: Finishing task: attempt_local575399118_0002_m_000000_0
+2026-11-04 02:01:26,166 INFO mapred.LocalJobRunner: Starting task: attempt_local575399118_0002_m_000001_0
+2026-11-04 02:01:26,166 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:26,166 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:26,167 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:26,167 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:26,168 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@113504be
+2026-11-04 02:01:26,169 INFO pi.DistSum: sigma=[n:value=203,delta=8,limit=395; e:value=494,delta=-20,limit=0]
+2026-11-04 02:01:26,169 INFO pi.DistSum: result=sigma=[n:value=203,delta=8,limit=395; e:value=494,delta=-20,limit=0]value=4604203088142722089, duration=0(0ms)
+2026-11-04 02:01:26,169 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:26,169 INFO mapred.Task: Task:attempt_local575399118_0002_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:01:26,170 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:26,170 INFO mapred.Task: Task attempt_local575399118_0002_m_000001_0 is allowed to commit now
+2026-11-04 02:01:26,171 INFO output.FileOutputCommitter: Saved output of task 'attempt_local575399118_0002_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_3.job001/out
+2026-11-04 02:01:26,171 INFO mapred.LocalJobRunner: result=sigma=[n:value=203,delta=8,limit=395; e:value=494,delta=-20,limit=0]value=4604203088142722089, duration=0(0ms)
+2026-11-04 02:01:26,171 INFO mapred.Task: Task 'attempt_local575399118_0002_m_000001_0' done.
+2026-11-04 02:01:26,171 INFO mapred.Task: Final Counters for attempt_local575399118_0002_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=564002
+		FILE: Number of bytes written=1841986
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:26,171 INFO mapred.LocalJobRunner: Finishing task: attempt_local575399118_0002_m_000001_0
+2026-11-04 02:01:26,171 INFO mapred.LocalJobRunner: map task executor complete.
+          20449ms (=20.449s)       : starting P8_5.job002 ...
+  steps/parts = 49/2 = 24
+          20449ms (=20.449s)       : P8_3.job001> timetaken=10.044s
+2026-11-04 02:01:36,159 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P8_3.job001> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P8_3.job001.txt
+DistSum P8_3.job001> sigma=[n:value=3,delta=8,limit=395; e:value=994,delta=-20,limit=0]value=4592632205697154912, duration=0(0ms)
+2026-11-04 02:01:36,165 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:01:36,175 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local172852468_0003
+2026-11-04 02:01:36,175 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:01:36,201 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2026-11-04 02:01:36,201 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+P8_5.job002> sleep(10s)
+2026-11-04 02:01:36,201 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:36,201 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:36,201 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:36,202 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:01:36,204 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:01:36,204 INFO mapred.LocalJobRunner: Starting task: attempt_local172852468_0003_m_000000_0
+2026-11-04 02:01:36,204 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:36,204 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:36,204 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:36,205 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:36,205 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@762ec1c5
+2026-11-04 02:01:36,206 INFO pi.DistSum: sigma=[n:value=5,delta=8,limit=205; e:value=989,delta=-20,limit=489]
+2026-11-04 02:01:36,206 INFO pi.DistSum: result=sigma=[n:value=5,delta=8,limit=205; e:value=989,delta=-20,limit=489]value=4604765121429073783, duration=0(0ms)
+2026-11-04 02:01:36,206 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:36,206 INFO mapred.Task: Task:attempt_local172852468_0003_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:01:36,206 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:36,206 INFO mapred.Task: Task attempt_local172852468_0003_m_000000_0 is allowed to commit now
+2026-11-04 02:01:36,207 INFO output.FileOutputCommitter: Saved output of task 'attempt_local172852468_0003_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_5.job002/out
+2026-11-04 02:01:36,207 INFO mapred.LocalJobRunner: result=sigma=[n:value=5,delta=8,limit=205; e:value=989,delta=-20,limit=489]value=4604765121429073783, duration=0(0ms)
+2026-11-04 02:01:36,207 INFO mapred.Task: Task 'attempt_local172852468_0003_m_000000_0' done.
+2026-11-04 02:01:36,207 INFO mapred.Task: Final Counters for attempt_local172852468_0003_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=845887
+		FILE: Number of bytes written=2761441
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:36,207 INFO mapred.LocalJobRunner: Finishing task: attempt_local172852468_0003_m_000000_0
+2026-11-04 02:01:36,207 INFO mapred.LocalJobRunner: Starting task: attempt_local172852468_0003_m_000001_0
+2026-11-04 02:01:36,208 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:36,208 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:36,208 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:36,208 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:36,209 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@445f71f4
+2026-11-04 02:01:36,209 INFO pi.DistSum: sigma=[n:value=205,delta=8,limit=397; e:value=489,delta=-20,limit=0]
+2026-11-04 02:01:36,209 INFO pi.DistSum: result=sigma=[n:value=205,delta=8,limit=397; e:value=489,delta=-20,limit=0]value=4600830912254132753, duration=0(0ms)
+2026-11-04 02:01:36,209 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:36,210 INFO mapred.Task: Task:attempt_local172852468_0003_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:01:36,210 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:36,210 INFO mapred.Task: Task attempt_local172852468_0003_m_000001_0 is allowed to commit now
+2026-11-04 02:01:36,210 INFO output.FileOutputCommitter: Saved output of task 'attempt_local172852468_0003_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_5.job002/out
+2026-11-04 02:01:36,210 INFO mapred.LocalJobRunner: result=sigma=[n:value=205,delta=8,limit=397; e:value=489,delta=-20,limit=0]value=4600830912254132753, duration=0(0ms)
+2026-11-04 02:01:36,210 INFO mapred.Task: Task 'attempt_local172852468_0003_m_000001_0' done.
+2026-11-04 02:01:36,211 INFO mapred.Task: Final Counters for attempt_local172852468_0003_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=846134
+		FILE: Number of bytes written=2761564
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:36,211 INFO mapred.LocalJobRunner: Finishing task: attempt_local172852468_0003_m_000001_0
+2026-11-04 02:01:36,211 INFO mapred.LocalJobRunner: map task executor complete.
+          30493ms (=30.493s)       : starting P8_7.job003 ...
+  steps/parts = 49/2 = 24
+          30494ms (=30.494s)       : P8_5.job002> timetaken=10.045s
+2026-11-04 02:01:46,202 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P8_5.job002> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P8_5.job002.txt
+DistSum P8_5.job002> sigma=[n:value=5,delta=8,limit=397; e:value=989,delta=-20,limit=0]value=4593817415479214592, duration=0(0ms)
+2026-11-04 02:01:46,207 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:01:46,211 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local900798466_0004
+2026-11-04 02:01:46,211 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:01:46,236 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P8_7.job003> sleep(10s)
+2026-11-04 02:01:46,237 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:01:46,237 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:46,237 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:46,237 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:46,237 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:01:46,238 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:01:46,238 INFO mapred.LocalJobRunner: Starting task: attempt_local900798466_0004_m_000000_0
+2026-11-04 02:01:46,239 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:46,239 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:46,239 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:46,239 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:46,239 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@3bfa6587
+2026-11-04 02:01:46,240 INFO pi.DistSum: sigma=[n:value=7,delta=8,limit=207; e:value=984,delta=-20,limit=484]
+2026-11-04 02:01:46,240 INFO pi.DistSum: result=sigma=[n:value=7,delta=8,limit=207; e:value=984,delta=-20,limit=484]value=4603739801730877114, duration=0(0ms)
+2026-11-04 02:01:46,240 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:46,240 INFO mapred.Task: Task:attempt_local900798466_0004_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:01:46,241 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:46,241 INFO mapred.Task: Task attempt_local900798466_0004_m_000000_0 is allowed to commit now
+2026-11-04 02:01:46,241 INFO output.FileOutputCommitter: Saved output of task 'attempt_local900798466_0004_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_7.job003/out
+2026-11-04 02:01:46,241 INFO mapred.LocalJobRunner: result=sigma=[n:value=7,delta=8,limit=207; e:value=984,delta=-20,limit=484]value=4603739801730877114, duration=0(0ms)
+2026-11-04 02:01:46,241 INFO mapred.Task: Task 'attempt_local900798466_0004_m_000000_0' done.
+2026-11-04 02:01:46,241 INFO mapred.Task: Final Counters for attempt_local900798466_0004_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1128019
+		FILE: Number of bytes written=3681019
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:46,241 INFO mapred.LocalJobRunner: Finishing task: attempt_local900798466_0004_m_000000_0
+2026-11-04 02:01:46,241 INFO mapred.LocalJobRunner: Starting task: attempt_local900798466_0004_m_000001_0
+2026-11-04 02:01:46,242 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:46,242 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:46,242 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:46,243 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:46,243 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@350e749
+2026-11-04 02:01:46,244 INFO pi.DistSum: sigma=[n:value=207,delta=8,limit=399; e:value=484,delta=-20,limit=0]
+2026-11-04 02:01:46,244 INFO pi.DistSum: result=sigma=[n:value=207,delta=8,limit=399; e:value=484,delta=-20,limit=0]value=4602703470756583778, duration=0(0ms)
+2026-11-04 02:01:46,244 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:46,244 INFO mapred.Task: Task:attempt_local900798466_0004_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:01:46,244 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:46,244 INFO mapred.Task: Task attempt_local900798466_0004_m_000001_0 is allowed to commit now
+2026-11-04 02:01:46,245 INFO output.FileOutputCommitter: Saved output of task 'attempt_local900798466_0004_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P8_7.job003/out
+2026-11-04 02:01:46,245 INFO mapred.LocalJobRunner: result=sigma=[n:value=207,delta=8,limit=399; e:value=484,delta=-20,limit=0]value=4602703470756583778, duration=0(0ms)
+2026-11-04 02:01:46,245 INFO mapred.Task: Task 'attempt_local900798466_0004_m_000001_0' done.
+2026-11-04 02:01:46,245 INFO mapred.Task: Final Counters for attempt_local900798466_0004_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1128266
+		FILE: Number of bytes written=3681142
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=123
+2026-11-04 02:01:46,245 INFO mapred.LocalJobRunner: Finishing task: attempt_local900798466_0004_m_000001_0
+2026-11-04 02:01:46,245 INFO mapred.LocalJobRunner: map task executor complete.
+          40529ms (=40.529s)       : starting P20_21.job004 ...
+  steps/parts = 49/2 = 24
+          40529ms (=40.529s)       : P8_7.job003> timetaken=10.036s
+2026-11-04 02:01:56,238 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P8_7.job003> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P8_7.job003.txt
+DistSum P8_7.job003> sigma=[n:value=7,delta=8,limit=399; e:value=984,delta=-20,limit=0]value=4593349493800501472, duration=0(0ms)
+2026-11-04 02:01:56,243 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:01:56,251 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local356700264_0005
+2026-11-04 02:01:56,251 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:01:56,283 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_21.job004> sleep(10s)
+2026-11-04 02:01:56,284 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:01:56,284 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:56,284 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:56,284 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:56,284 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:01:56,285 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:01:56,286 INFO mapred.LocalJobRunner: Starting task: attempt_local356700264_0005_m_000000_0
+2026-11-04 02:01:56,286 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:56,286 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:56,286 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:56,286 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:56,287 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@458aee27
+2026-11-04 02:01:56,288 INFO pi.DistSum: sigma=[n:value=21,delta=20,limit=521; e:value=982,delta=-20,limit=482]
+2026-11-04 02:01:56,288 INFO pi.DistSum: result=sigma=[n:value=21,delta=20,limit=521; e:value=982,delta=-20,limit=482]value=4603923421465548604, duration=0(0ms)
+2026-11-04 02:01:56,288 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:56,288 INFO mapred.Task: Task:attempt_local356700264_0005_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:01:56,289 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:56,289 INFO mapred.Task: Task attempt_local356700264_0005_m_000000_0 is allowed to commit now
+2026-11-04 02:01:56,289 INFO output.FileOutputCommitter: Saved output of task 'attempt_local356700264_0005_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_21.job004/out
+2026-11-04 02:01:56,289 INFO mapred.LocalJobRunner: result=sigma=[n:value=21,delta=20,limit=521; e:value=982,delta=-20,limit=482]value=4603923421465548604, duration=0(0ms)
+2026-11-04 02:01:56,289 INFO mapred.Task: Task 'attempt_local356700264_0005_m_000000_0' done.
+2026-11-04 02:01:56,289 INFO mapred.Task: Final Counters for attempt_local356700264_0005_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1410151
+		FILE: Number of bytes written=4600613
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:01:56,289 INFO mapred.LocalJobRunner: Finishing task: attempt_local356700264_0005_m_000000_0
+2026-11-04 02:01:56,289 INFO mapred.LocalJobRunner: Starting task: attempt_local356700264_0005_m_000001_0
+2026-11-04 02:01:56,290 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:01:56,290 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:01:56,290 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:01:56,290 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:01:56,291 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@5312cb07
+2026-11-04 02:01:56,291 INFO pi.DistSum: sigma=[n:value=521,delta=20,limit=1001; e:value=482,delta=-20,limit=0]
+2026-11-04 02:01:56,291 INFO pi.DistSum: result=sigma=[n:value=521,delta=20,limit=1001; e:value=482,delta=-20,limit=0]value=4603443027516753648, duration=0(0ms)
+2026-11-04 02:01:56,291 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:56,292 INFO mapred.Task: Task:attempt_local356700264_0005_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:01:56,292 INFO mapred.LocalJobRunner: 
+2026-11-04 02:01:56,292 INFO mapred.Task: Task attempt_local356700264_0005_m_000001_0 is allowed to commit now
+2026-11-04 02:01:56,292 INFO output.FileOutputCommitter: Saved output of task 'attempt_local356700264_0005_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_21.job004/out
+2026-11-04 02:01:56,293 INFO mapred.LocalJobRunner: result=sigma=[n:value=521,delta=20,limit=1001; e:value=482,delta=-20,limit=0]value=4603443027516753648, duration=0(0ms)
+2026-11-04 02:01:56,293 INFO mapred.Task: Task 'attempt_local356700264_0005_m_000001_0' done.
+2026-11-04 02:01:56,293 INFO mapred.Task: Final Counters for attempt_local356700264_0005_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1410398
+		FILE: Number of bytes written=4600738
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:01:56,293 INFO mapred.LocalJobRunner: Finishing task: attempt_local356700264_0005_m_000001_0
+2026-11-04 02:01:56,293 INFO mapred.LocalJobRunner: map task executor complete.
+          50576ms (=50.576s)       : starting P20_3.job005 ...
+  steps/parts = 50/2 = 25
+          50576ms (=50.576s)       : P20_21.job004> timetaken=10.047s
+2026-11-04 02:02:06,285 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_21.job004> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_21.job004.txt
+DistSum P20_21.job004> sigma=[n:value=21,delta=20,limit=1001; e:value=982,delta=-20,limit=0]value=4597203262838569136, duration=0(0ms)
+2026-11-04 02:02:06,290 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:06,298 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local355571697_0006
+2026-11-04 02:02:06,298 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:02:06,328 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2026-11-04 02:02:06,328 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+P20_3.job005> sleep(10s)
+2026-11-04 02:02:06,328 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:06,328 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:06,328 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:06,328 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:06,330 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:06,330 INFO mapred.LocalJobRunner: Starting task: attempt_local355571697_0006_m_000000_0
+2026-11-04 02:02:06,330 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:06,330 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:06,330 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:06,330 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:06,331 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@77463d37
+2026-11-04 02:02:06,331 INFO pi.DistSum: sigma=[n:value=3,delta=20,limit=503; e:value=1000,delta=-20,limit=500]
+2026-11-04 02:02:06,332 INFO pi.DistSum: result=sigma=[n:value=3,delta=20,limit=503; e:value=1000,delta=-20,limit=500]value=4603759823621390597, duration=0(0ms)
+2026-11-04 02:02:06,332 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:06,332 INFO mapred.Task: Task:attempt_local355571697_0006_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:06,332 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:06,332 INFO mapred.Task: Task attempt_local355571697_0006_m_000000_0 is allowed to commit now
+2026-11-04 02:02:06,332 INFO output.FileOutputCommitter: Saved output of task 'attempt_local355571697_0006_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_3.job005/out
+2026-11-04 02:02:06,333 INFO mapred.LocalJobRunner: result=sigma=[n:value=3,delta=20,limit=503; e:value=1000,delta=-20,limit=500]value=4603759823621390597, duration=0(0ms)
+2026-11-04 02:02:06,333 INFO mapred.Task: Task 'attempt_local355571697_0006_m_000000_0' done.
+2026-11-04 02:02:06,333 INFO mapred.Task: Final Counters for attempt_local355571697_0006_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1692287
+		FILE: Number of bytes written=5520209
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:02:06,333 INFO mapred.LocalJobRunner: Finishing task: attempt_local355571697_0006_m_000000_0
+2026-11-04 02:02:06,333 INFO mapred.LocalJobRunner: Starting task: attempt_local355571697_0006_m_000001_0
+2026-11-04 02:02:06,333 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:06,333 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:06,333 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:06,333 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:06,334 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@1f8f360c
+2026-11-04 02:02:06,334 INFO pi.DistSum: sigma=[n:value=503,delta=20,limit=1003; e:value=500,delta=-20,limit=0]
+2026-11-04 02:02:06,334 INFO pi.DistSum: result=sigma=[n:value=503,delta=20,limit=1003; e:value=500,delta=-20,limit=0]value=4598829531980927736, duration=0(0ms)
+2026-11-04 02:02:06,334 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:06,335 INFO mapred.Task: Task:attempt_local355571697_0006_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:06,335 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:06,335 INFO mapred.Task: Task attempt_local355571697_0006_m_000001_0 is allowed to commit now
+2026-11-04 02:02:06,335 INFO output.FileOutputCommitter: Saved output of task 'attempt_local355571697_0006_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_3.job005/out
+2026-11-04 02:02:06,335 INFO mapred.LocalJobRunner: result=sigma=[n:value=503,delta=20,limit=1003; e:value=500,delta=-20,limit=0]value=4598829531980927736, duration=0(0ms)
+2026-11-04 02:02:06,335 INFO mapred.Task: Task 'attempt_local355571697_0006_m_000001_0' done.
+2026-11-04 02:02:06,335 INFO mapred.Task: Final Counters for attempt_local355571697_0006_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1692534
+		FILE: Number of bytes written=5520334
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:02:06,335 INFO mapred.LocalJobRunner: Finishing task: attempt_local355571697_0006_m_000001_0
+2026-11-04 02:02:06,336 INFO mapred.LocalJobRunner: map task executor complete.
+          60620ms (=1:00.620)      : starting P20_5.job006 ...
+  steps/parts = 49/2 = 24
+          60620ms (=1:00.620)      : P20_3.job005> timetaken=10.044s
+2026-11-04 02:02:16,329 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_3.job005> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_3.job005.txt
+DistSum P20_3.job005> sigma=[n:value=3,delta=20,limit=1003; e:value=1000,delta=-20,limit=0]value=4606338779652901505, duration=0(0ms)
+2026-11-04 02:02:16,333 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:16,337 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1798924574_0007
+2026-11-04 02:02:16,337 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:02:16,362 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_5.job006> sleep(10s)
+2026-11-04 02:02:16,362 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:02:16,362 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:16,362 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:16,362 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:16,362 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:16,364 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:16,364 INFO mapred.LocalJobRunner: Starting task: attempt_local1798924574_0007_m_000000_0
+2026-11-04 02:02:16,365 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:16,365 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:16,365 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:16,365 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:16,365 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@25ca04d3
+2026-11-04 02:02:16,366 INFO pi.DistSum: sigma=[n:value=5,delta=20,limit=505; e:value=996,delta=-20,limit=496]
+2026-11-04 02:02:16,366 INFO pi.DistSum: result=sigma=[n:value=5,delta=20,limit=505; e:value=996,delta=-20,limit=496]value=4598724482866129112, duration=0(0ms)
+2026-11-04 02:02:16,366 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:16,366 INFO mapred.Task: Task:attempt_local1798924574_0007_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:16,367 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:16,367 INFO mapred.Task: Task attempt_local1798924574_0007_m_000000_0 is allowed to commit now
+2026-11-04 02:02:16,367 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1798924574_0007_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_5.job006/out
+2026-11-04 02:02:16,367 INFO mapred.LocalJobRunner: result=sigma=[n:value=5,delta=20,limit=505; e:value=996,delta=-20,limit=496]value=4598724482866129112, duration=0(0ms)
+2026-11-04 02:02:16,367 INFO mapred.Task: Task 'attempt_local1798924574_0007_m_000000_0' done.
+2026-11-04 02:02:16,367 INFO mapred.Task: Final Counters for attempt_local1798924574_0007_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1974423
+		FILE: Number of bytes written=6442872
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:16,367 INFO mapred.LocalJobRunner: Finishing task: attempt_local1798924574_0007_m_000000_0
+2026-11-04 02:02:16,367 INFO mapred.LocalJobRunner: Starting task: attempt_local1798924574_0007_m_000001_0
+2026-11-04 02:02:16,368 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:16,368 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:16,368 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:16,368 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:16,368 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@789d2442
+2026-11-04 02:02:16,369 INFO pi.DistSum: sigma=[n:value=505,delta=20,limit=985; e:value=496,delta=-20,limit=0]
+2026-11-04 02:02:16,369 INFO pi.DistSum: result=sigma=[n:value=505,delta=20,limit=985; e:value=496,delta=-20,limit=0]value=4604593765148099268, duration=0(0ms)
+2026-11-04 02:02:16,369 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:16,369 INFO mapred.Task: Task:attempt_local1798924574_0007_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:16,369 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:16,369 INFO mapred.Task: Task attempt_local1798924574_0007_m_000001_0 is allowed to commit now
+2026-11-04 02:02:16,369 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1798924574_0007_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_5.job006/out
+2026-11-04 02:02:16,370 INFO mapred.LocalJobRunner: result=sigma=[n:value=505,delta=20,limit=985; e:value=496,delta=-20,limit=0]value=4604593765148099268, duration=0(0ms)
+2026-11-04 02:02:16,370 INFO mapred.Task: Task 'attempt_local1798924574_0007_m_000001_0' done.
+2026-11-04 02:02:16,370 INFO mapred.Task: Final Counters for attempt_local1798924574_0007_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=1974670
+		FILE: Number of bytes written=6442996
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:16,370 INFO mapred.LocalJobRunner: Finishing task: attempt_local1798924574_0007_m_000001_0
+2026-11-04 02:02:16,370 INFO mapred.LocalJobRunner: map task executor complete.
+          70654ms (=1:10.654)      : starting P20_7.job007 ...
+  steps/parts = 49/2 = 24
+          70655ms (=1:10.655)      : P20_5.job006> timetaken=10.035s
+P20_5.job006> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_5.job006.txt
+2026-11-04 02:02:26,364 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+DistSum P20_5.job006> sigma=[n:value=5,delta=20,limit=985; e:value=996,delta=-20,limit=0]value=4607120196622210864, duration=0(0ms)
+2026-11-04 02:02:26,368 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:26,373 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local819865251_0008
+2026-11-04 02:02:26,373 INFO mapreduce.JobSubmitter: Executing with tokens: []
+P20_7.job007> sleep(10s)
+2026-11-04 02:02:26,400 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2026-11-04 02:02:26,401 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:02:26,401 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:26,401 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:26,401 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:26,401 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:26,402 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:26,402 INFO mapred.LocalJobRunner: Starting task: attempt_local819865251_0008_m_000000_0
+2026-11-04 02:02:26,403 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:26,403 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:26,403 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:26,403 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:26,404 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@10ee5a0f
+2026-11-04 02:02:26,404 INFO pi.DistSum: sigma=[n:value=7,delta=20,limit=507; e:value=996,delta=-20,limit=496]
+2026-11-04 02:02:26,404 INFO pi.DistSum: result=sigma=[n:value=7,delta=20,limit=507; e:value=996,delta=-20,limit=496]value=4604107222468663540, duration=0(0ms)
+2026-11-04 02:02:26,404 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:26,405 INFO mapred.Task: Task:attempt_local819865251_0008_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:26,405 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:26,405 INFO mapred.Task: Task attempt_local819865251_0008_m_000000_0 is allowed to commit now
+2026-11-04 02:02:26,405 INFO output.FileOutputCommitter: Saved output of task 'attempt_local819865251_0008_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_7.job007/out
+2026-11-04 02:02:26,405 INFO mapred.LocalJobRunner: result=sigma=[n:value=7,delta=20,limit=507; e:value=996,delta=-20,limit=496]value=4604107222468663540, duration=0(0ms)
+2026-11-04 02:02:26,405 INFO mapred.Task: Task 'attempt_local819865251_0008_m_000000_0' done.
+2026-11-04 02:02:26,405 INFO mapred.Task: Final Counters for attempt_local819865251_0008_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2256557
+		FILE: Number of bytes written=7362460
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:26,405 INFO mapred.LocalJobRunner: Finishing task: attempt_local819865251_0008_m_000000_0
+2026-11-04 02:02:26,405 INFO mapred.LocalJobRunner: Starting task: attempt_local819865251_0008_m_000001_0
+2026-11-04 02:02:26,406 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:26,406 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:26,406 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:26,406 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:26,407 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@5c9a18cb
+2026-11-04 02:02:26,408 INFO pi.DistSum: sigma=[n:value=507,delta=20,limit=987; e:value=496,delta=-20,limit=0]
+2026-11-04 02:02:26,408 INFO pi.DistSum: result=sigma=[n:value=507,delta=20,limit=987; e:value=496,delta=-20,limit=0]value=4595612674515036992, duration=0(0ms)
+2026-11-04 02:02:26,408 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:26,408 INFO mapred.Task: Task:attempt_local819865251_0008_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:26,408 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:26,408 INFO mapred.Task: Task attempt_local819865251_0008_m_000001_0 is allowed to commit now
+2026-11-04 02:02:26,408 INFO output.FileOutputCommitter: Saved output of task 'attempt_local819865251_0008_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_7.job007/out
+2026-11-04 02:02:26,409 INFO mapred.LocalJobRunner: result=sigma=[n:value=507,delta=20,limit=987; e:value=496,delta=-20,limit=0]value=4595612674515036992, duration=0(0ms)
+2026-11-04 02:02:26,409 INFO mapred.Task: Task 'attempt_local819865251_0008_m_000001_0' done.
+2026-11-04 02:02:26,409 INFO mapred.Task: Final Counters for attempt_local819865251_0008_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2256804
+		FILE: Number of bytes written=7362584
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:26,409 INFO mapred.LocalJobRunner: Finishing task: attempt_local819865251_0008_m_000001_0
+2026-11-04 02:02:26,409 INFO mapred.LocalJobRunner: map task executor complete.
+          80693ms (=1:20.693)      : starting P20_9.job008 ...
+  steps/parts = 49/2 = 24
+          80693ms (=1:20.693)      : P20_7.job007> timetaken=10.039s
+2026-11-04 02:02:36,402 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_7.job007> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_7.job007.txt
+DistSum P20_7.job007> sigma=[n:value=7,delta=20,limit=987; e:value=996,delta=-20,limit=0]value=4605718386024788932, duration=0(0ms)
+2026-11-04 02:02:36,406 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:36,412 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local673812306_0009
+2026-11-04 02:02:36,412 INFO mapreduce.JobSubmitter: Executing with tokens: []
+P20_9.job008> sleep(10s)
+2026-11-04 02:02:36,446 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2026-11-04 02:02:36,446 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:02:36,446 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:36,446 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:36,446 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:36,446 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:36,448 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:36,448 INFO mapred.LocalJobRunner: Starting task: attempt_local673812306_0009_m_000000_0
+2026-11-04 02:02:36,449 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:36,449 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:36,449 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:36,449 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:36,449 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@70c94f7e
+2026-11-04 02:02:36,450 INFO pi.DistSum: sigma=[n:value=9,delta=20,limit=509; e:value=994,delta=-20,limit=494]
+2026-11-04 02:02:36,450 INFO pi.DistSum: result=sigma=[n:value=9,delta=20,limit=509; e:value=994,delta=-20,limit=494]value=4601245810097280260, duration=0(0ms)
+2026-11-04 02:02:36,450 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:36,450 INFO mapred.Task: Task:attempt_local673812306_0009_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:36,451 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:36,451 INFO mapred.Task: Task attempt_local673812306_0009_m_000000_0 is allowed to commit now
+2026-11-04 02:02:36,451 INFO output.FileOutputCommitter: Saved output of task 'attempt_local673812306_0009_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_9.job008/out
+2026-11-04 02:02:36,451 INFO mapred.LocalJobRunner: result=sigma=[n:value=9,delta=20,limit=509; e:value=994,delta=-20,limit=494]value=4601245810097280260, duration=0(0ms)
+2026-11-04 02:02:36,451 INFO mapred.Task: Task 'attempt_local673812306_0009_m_000000_0' done.
+2026-11-04 02:02:36,451 INFO mapred.Task: Final Counters for attempt_local673812306_0009_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2538691
+		FILE: Number of bytes written=8282048
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:36,451 INFO mapred.LocalJobRunner: Finishing task: attempt_local673812306_0009_m_000000_0
+2026-11-04 02:02:36,451 INFO mapred.LocalJobRunner: Starting task: attempt_local673812306_0009_m_000001_0
+2026-11-04 02:02:36,452 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:36,452 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:36,452 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:36,452 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:36,452 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@7081210b
+2026-11-04 02:02:36,453 INFO pi.DistSum: sigma=[n:value=509,delta=20,limit=989; e:value=494,delta=-20,limit=0]
+2026-11-04 02:02:36,453 INFO pi.DistSum: result=sigma=[n:value=509,delta=20,limit=989; e:value=494,delta=-20,limit=0]value=4605656850991342630, duration=0(0ms)
+2026-11-04 02:02:36,453 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:36,453 INFO mapred.Task: Task:attempt_local673812306_0009_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:36,453 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:36,453 INFO mapred.Task: Task attempt_local673812306_0009_m_000001_0 is allowed to commit now
+2026-11-04 02:02:36,454 INFO output.FileOutputCommitter: Saved output of task 'attempt_local673812306_0009_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_9.job008/out
+2026-11-04 02:02:36,454 INFO mapred.LocalJobRunner: result=sigma=[n:value=509,delta=20,limit=989; e:value=494,delta=-20,limit=0]value=4605656850991342630, duration=0(0ms)
+2026-11-04 02:02:36,454 INFO mapred.Task: Task 'attempt_local673812306_0009_m_000001_0' done.
+2026-11-04 02:02:36,454 INFO mapred.Task: Final Counters for attempt_local673812306_0009_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2538938
+		FILE: Number of bytes written=8282172
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:36,454 INFO mapred.LocalJobRunner: Finishing task: attempt_local673812306_0009_m_000001_0
+2026-11-04 02:02:36,454 INFO mapred.LocalJobRunner: map task executor complete.
+          90738ms (=1:30.738)      : starting P20_11.job009 ...
+  steps/parts = 49/2 = 24
+          90738ms (=1:30.738)      : P20_9.job008> timetaken=10.045s
+2026-11-04 02:02:46,447 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_9.job008> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_9.job008.txt
+DistSum P20_9.job008> sigma=[n:value=9,delta=20,limit=989; e:value=994,delta=-20,limit=0]value=4598194674479930704, duration=0(0ms)
+2026-11-04 02:02:46,452 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:46,460 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1156869749_0010
+2026-11-04 02:02:46,460 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:02:46,491 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_11.job009> sleep(10s)
+2026-11-04 02:02:46,491 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:02:46,491 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:46,491 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:46,491 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:46,491 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:46,493 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:46,493 INFO mapred.LocalJobRunner: Starting task: attempt_local1156869749_0010_m_000000_0
+2026-11-04 02:02:46,493 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:46,493 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:46,493 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:46,493 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:46,494 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@4eae7c40
+2026-11-04 02:02:46,494 INFO pi.DistSum: sigma=[n:value=11,delta=20,limit=511; e:value=992,delta=-20,limit=492]
+2026-11-04 02:02:46,494 INFO pi.DistSum: result=sigma=[n:value=11,delta=20,limit=511; e:value=992,delta=-20,limit=492]value=4604538928541344353, duration=0(0ms)
+2026-11-04 02:02:46,495 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:46,495 INFO mapred.Task: Task:attempt_local1156869749_0010_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:46,495 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:46,495 INFO mapred.Task: Task attempt_local1156869749_0010_m_000000_0 is allowed to commit now
+2026-11-04 02:02:46,495 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1156869749_0010_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_11.job009/out
+2026-11-04 02:02:46,496 INFO mapred.LocalJobRunner: result=sigma=[n:value=11,delta=20,limit=511; e:value=992,delta=-20,limit=492]value=4604538928541344353, duration=0(0ms)
+2026-11-04 02:02:46,496 INFO mapred.Task: Task 'attempt_local1156869749_0010_m_000000_0' done.
+2026-11-04 02:02:46,496 INFO mapred.Task: Final Counters for attempt_local1156869749_0010_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2820825
+		FILE: Number of bytes written=9204715
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:02:46,496 INFO mapred.LocalJobRunner: Finishing task: attempt_local1156869749_0010_m_000000_0
+2026-11-04 02:02:46,496 INFO mapred.LocalJobRunner: Starting task: attempt_local1156869749_0010_m_000001_0
+2026-11-04 02:02:46,496 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:46,496 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:46,496 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:46,496 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:46,497 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@3adba62f
+2026-11-04 02:02:46,497 INFO pi.DistSum: sigma=[n:value=511,delta=20,limit=991; e:value=492,delta=-20,limit=0]
+2026-11-04 02:02:46,497 INFO pi.DistSum: result=sigma=[n:value=511,delta=20,limit=991; e:value=492,delta=-20,limit=0]value=4606940427072903262, duration=0(0ms)
+2026-11-04 02:02:46,497 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:46,497 INFO mapred.Task: Task:attempt_local1156869749_0010_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:46,498 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:46,498 INFO mapred.Task: Task attempt_local1156869749_0010_m_000001_0 is allowed to commit now
+2026-11-04 02:02:46,498 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1156869749_0010_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_11.job009/out
+2026-11-04 02:02:46,498 INFO mapred.LocalJobRunner: result=sigma=[n:value=511,delta=20,limit=991; e:value=492,delta=-20,limit=0]value=4606940427072903262, duration=0(0ms)
+2026-11-04 02:02:46,498 INFO mapred.Task: Task 'attempt_local1156869749_0010_m_000001_0' done.
+2026-11-04 02:02:46,498 INFO mapred.Task: Final Counters for attempt_local1156869749_0010_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=2821072
+		FILE: Number of bytes written=9204839
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:46,498 INFO mapred.LocalJobRunner: Finishing task: attempt_local1156869749_0010_m_000001_0
+2026-11-04 02:02:46,498 INFO mapred.LocalJobRunner: map task executor complete.
+         100783ms (=1:40.783)      : starting P20_13.job010 ...
+  steps/parts = 49/2 = 24
+         100784ms (=1:40.784)      : P20_11.job009> timetaken=10.046s
+2026-11-04 02:02:56,493 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_11.job009> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_11.job009.txt
+DistSum P20_11.job009> sigma=[n:value=11,delta=20,limit=991; e:value=992,delta=-20,limit=0]value=4604296936814230208, duration=0(0ms)
+2026-11-04 02:02:56,497 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:02:56,504 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1941705617_0011
+2026-11-04 02:02:56,504 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:02:56,535 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_13.job010> sleep(10s)
+2026-11-04 02:02:56,536 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:02:56,536 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:56,536 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:56,536 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:56,536 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:02:56,537 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:02:56,537 INFO mapred.LocalJobRunner: Starting task: attempt_local1941705617_0011_m_000000_0
+2026-11-04 02:02:56,538 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:56,538 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:56,538 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:56,538 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:56,539 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@73cd2c29
+2026-11-04 02:02:56,539 INFO pi.DistSum: sigma=[n:value=13,delta=20,limit=513; e:value=990,delta=-20,limit=490]
+2026-11-04 02:02:56,539 INFO pi.DistSum: result=sigma=[n:value=13,delta=20,limit=513; e:value=990,delta=-20,limit=490]value=4605048297563782868, duration=0(0ms)
+2026-11-04 02:02:56,539 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:56,540 INFO mapred.Task: Task:attempt_local1941705617_0011_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:02:56,540 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:56,540 INFO mapred.Task: Task attempt_local1941705617_0011_m_000000_0 is allowed to commit now
+2026-11-04 02:02:56,540 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1941705617_0011_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_13.job010/out
+2026-11-04 02:02:56,540 INFO mapred.LocalJobRunner: result=sigma=[n:value=13,delta=20,limit=513; e:value=990,delta=-20,limit=490]value=4605048297563782868, duration=0(0ms)
+2026-11-04 02:02:56,540 INFO mapred.Task: Task 'attempt_local1941705617_0011_m_000000_0' done.
+2026-11-04 02:02:56,540 INFO mapred.Task: Final Counters for attempt_local1941705617_0011_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3102960
+		FILE: Number of bytes written=10127383
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:02:56,540 INFO mapred.LocalJobRunner: Finishing task: attempt_local1941705617_0011_m_000000_0
+2026-11-04 02:02:56,540 INFO mapred.LocalJobRunner: Starting task: attempt_local1941705617_0011_m_000001_0
+2026-11-04 02:02:56,541 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:02:56,541 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:02:56,541 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:02:56,541 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:02:56,541 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@1c1e4c77
+2026-11-04 02:02:56,542 INFO pi.DistSum: sigma=[n:value=513,delta=20,limit=993; e:value=490,delta=-20,limit=0]
+2026-11-04 02:02:56,542 INFO pi.DistSum: result=sigma=[n:value=513,delta=20,limit=993; e:value=490,delta=-20,limit=0]value=4604196110022676534, duration=0(0ms)
+2026-11-04 02:02:56,542 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:56,542 INFO mapred.Task: Task:attempt_local1941705617_0011_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:02:56,542 INFO mapred.LocalJobRunner: 
+2026-11-04 02:02:56,542 INFO mapred.Task: Task attempt_local1941705617_0011_m_000001_0 is allowed to commit now
+2026-11-04 02:02:56,542 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1941705617_0011_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_13.job010/out
+2026-11-04 02:02:56,542 INFO mapred.LocalJobRunner: result=sigma=[n:value=513,delta=20,limit=993; e:value=490,delta=-20,limit=0]value=4604196110022676534, duration=0(0ms)
+2026-11-04 02:02:56,542 INFO mapred.Task: Task 'attempt_local1941705617_0011_m_000001_0' done.
+2026-11-04 02:02:56,542 INFO mapred.Task: Final Counters for attempt_local1941705617_0011_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3103207
+		FILE: Number of bytes written=10127507
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:02:56,542 INFO mapred.LocalJobRunner: Finishing task: attempt_local1941705617_0011_m_000001_0
+2026-11-04 02:02:56,543 INFO mapred.LocalJobRunner: map task executor complete.
+         110828ms (=1:50.828)      : starting P20_15.job011 ...
+  steps/parts = 49/2 = 24
+         110828ms (=1:50.828)      : P20_13.job010> timetaken=10.045s
+2026-11-04 02:03:06,536 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_13.job010> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_13.job010.txt
+DistSum P20_13.job010> sigma=[n:value=13,delta=20,limit=993; e:value=990,delta=-20,limit=0]value=4601445158400237076, duration=0(0ms)
+2026-11-04 02:03:06,539 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:03:06,545 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1175658576_0012
+2026-11-04 02:03:06,545 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:03:06,575 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_15.job011> sleep(10s)
+2026-11-04 02:03:06,576 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:03:06,576 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:06,576 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:06,576 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:06,576 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:03:06,577 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:03:06,577 INFO mapred.LocalJobRunner: Starting task: attempt_local1175658576_0012_m_000000_0
+2026-11-04 02:03:06,578 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:06,578 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:06,578 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:06,578 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:06,578 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@13d762b4
+2026-11-04 02:03:06,579 INFO pi.DistSum: sigma=[n:value=15,delta=20,limit=515; e:value=986,delta=-20,limit=486]
+2026-11-04 02:03:06,579 INFO pi.DistSum: result=sigma=[n:value=15,delta=20,limit=515; e:value=986,delta=-20,limit=486]value=4592027224405917056, duration=0(0ms)
+2026-11-04 02:03:06,579 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:06,579 INFO mapred.Task: Task:attempt_local1175658576_0012_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:03:06,579 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:06,579 INFO mapred.Task: Task attempt_local1175658576_0012_m_000000_0 is allowed to commit now
+2026-11-04 02:03:06,580 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1175658576_0012_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_15.job011/out
+2026-11-04 02:03:06,580 INFO mapred.LocalJobRunner: result=sigma=[n:value=15,delta=20,limit=515; e:value=986,delta=-20,limit=486]value=4592027224405917056, duration=0(0ms)
+2026-11-04 02:03:06,580 INFO mapred.Task: Task 'attempt_local1175658576_0012_m_000000_0' done.
+2026-11-04 02:03:06,580 INFO mapred.Task: Final Counters for attempt_local1175658576_0012_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3385095
+		FILE: Number of bytes written=11050051
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:03:06,580 INFO mapred.LocalJobRunner: Finishing task: attempt_local1175658576_0012_m_000000_0
+2026-11-04 02:03:06,580 INFO mapred.LocalJobRunner: Starting task: attempt_local1175658576_0012_m_000001_0
+2026-11-04 02:03:06,580 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:06,580 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:06,580 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:06,580 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:06,580 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@5a96768f
+2026-11-04 02:03:06,581 INFO pi.DistSum: sigma=[n:value=515,delta=20,limit=995; e:value=486,delta=-20,limit=0]
+2026-11-04 02:03:06,581 INFO pi.DistSum: result=sigma=[n:value=515,delta=20,limit=995; e:value=486,delta=-20,limit=0]value=4599576251456864934, duration=0(0ms)
+2026-11-04 02:03:06,581 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:06,581 INFO mapred.Task: Task:attempt_local1175658576_0012_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:03:06,581 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:06,581 INFO mapred.Task: Task attempt_local1175658576_0012_m_000001_0 is allowed to commit now
+2026-11-04 02:03:06,582 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1175658576_0012_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_15.job011/out
+2026-11-04 02:03:06,582 INFO mapred.LocalJobRunner: result=sigma=[n:value=515,delta=20,limit=995; e:value=486,delta=-20,limit=0]value=4599576251456864934, duration=0(0ms)
+2026-11-04 02:03:06,582 INFO mapred.Task: Task 'attempt_local1175658576_0012_m_000001_0' done.
+2026-11-04 02:03:06,582 INFO mapred.Task: Final Counters for attempt_local1175658576_0012_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3385342
+		FILE: Number of bytes written=11050175
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:03:06,582 INFO mapred.LocalJobRunner: Finishing task: attempt_local1175658576_0012_m_000001_0
+2026-11-04 02:03:06,582 INFO mapred.LocalJobRunner: map task executor complete.
+         120868ms (=2:00.868)      : starting P20_17.job012 ...
+  steps/parts = 49/2 = 24
+         120868ms (=2:00.868)      : P20_15.job011> timetaken=10.040s
+2026-11-04 02:03:16,577 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_15.job011> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_15.job011.txt
+DistSum P20_15.job011> sigma=[n:value=15,delta=20,limit=995; e:value=986,delta=-20,limit=0]value=4601416952392552966, duration=0(0ms)
+2026-11-04 02:03:16,581 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:03:16,589 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1583194171_0013
+2026-11-04 02:03:16,589 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:03:16,622 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_17.job012> sleep(10s)
+2026-11-04 02:03:16,622 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:03:16,622 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:16,622 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:16,622 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:16,622 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:03:16,624 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:03:16,624 INFO mapred.LocalJobRunner: Starting task: attempt_local1583194171_0013_m_000000_0
+2026-11-04 02:03:16,624 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:16,624 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:16,624 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:16,625 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:16,625 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@422821f5
+2026-11-04 02:03:16,626 INFO pi.DistSum: sigma=[n:value=17,delta=20,limit=517; e:value=986,delta=-20,limit=486]
+2026-11-04 02:03:16,626 INFO pi.DistSum: result=sigma=[n:value=17,delta=20,limit=517; e:value=986,delta=-20,limit=486]value=4603479491039374659, duration=0(0ms)
+2026-11-04 02:03:16,626 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:16,626 INFO mapred.Task: Task:attempt_local1583194171_0013_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:03:16,626 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:16,626 INFO mapred.Task: Task attempt_local1583194171_0013_m_000000_0 is allowed to commit now
+2026-11-04 02:03:16,627 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1583194171_0013_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_17.job012/out
+2026-11-04 02:03:16,627 INFO mapred.LocalJobRunner: result=sigma=[n:value=17,delta=20,limit=517; e:value=986,delta=-20,limit=486]value=4603479491039374659, duration=0(0ms)
+2026-11-04 02:03:16,627 INFO mapred.Task: Task 'attempt_local1583194171_0013_m_000000_0' done.
+2026-11-04 02:03:16,627 INFO mapred.Task: Final Counters for attempt_local1583194171_0013_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3667230
+		FILE: Number of bytes written=11972719
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:03:16,627 INFO mapred.LocalJobRunner: Finishing task: attempt_local1583194171_0013_m_000000_0
+2026-11-04 02:03:16,627 INFO mapred.LocalJobRunner: Starting task: attempt_local1583194171_0013_m_000001_0
+2026-11-04 02:03:16,627 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:16,627 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:16,627 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:16,628 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:16,628 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@3041e55c
+2026-11-04 02:03:16,628 INFO pi.DistSum: sigma=[n:value=517,delta=20,limit=997; e:value=486,delta=-20,limit=0]
+2026-11-04 02:03:16,628 INFO pi.DistSum: result=sigma=[n:value=517,delta=20,limit=997; e:value=486,delta=-20,limit=0]value=4604410780517778251, duration=0(0ms)
+2026-11-04 02:03:16,629 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:16,629 INFO mapred.Task: Task:attempt_local1583194171_0013_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:03:16,629 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:16,629 INFO mapred.Task: Task attempt_local1583194171_0013_m_000001_0 is allowed to commit now
+2026-11-04 02:03:16,629 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1583194171_0013_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_17.job012/out
+2026-11-04 02:03:16,629 INFO mapred.LocalJobRunner: result=sigma=[n:value=517,delta=20,limit=997; e:value=486,delta=-20,limit=0]value=4604410780517778251, duration=0(0ms)
+2026-11-04 02:03:16,629 INFO mapred.Task: Task 'attempt_local1583194171_0013_m_000001_0' done.
+2026-11-04 02:03:16,629 INFO mapred.Task: Final Counters for attempt_local1583194171_0013_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3667477
+		FILE: Number of bytes written=11972843
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:03:16,629 INFO mapred.LocalJobRunner: Finishing task: attempt_local1583194171_0013_m_000001_0
+2026-11-04 02:03:16,629 INFO mapred.LocalJobRunner: map task executor complete.
+         130914ms (=2:10.914)      : starting P20_19.job013 ...
+  steps/parts = 49/2 = 24
+         130914ms (=2:10.914)      : P20_17.job012> timetaken=10.046s
+2026-11-04 02:03:26,623 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+P20_17.job012> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_17.job012.txt
+DistSum P20_17.job012> sigma=[n:value=17,delta=20,limit=997; e:value=986,delta=-20,limit=0]value=4598736886341624092, duration=0(0ms)
+2026-11-04 02:03:26,626 INFO mapreduce.JobSubmitter: number of splits:2
+2026-11-04 02:03:26,632 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local447097606_0014
+2026-11-04 02:03:26,632 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2026-11-04 02:03:26,663 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+P20_19.job013> sleep(10s)
+2026-11-04 02:03:26,663 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2026-11-04 02:03:26,663 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:26,663 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:26,663 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:26,663 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2026-11-04 02:03:26,665 INFO mapred.LocalJobRunner: Waiting for map tasks
+2026-11-04 02:03:26,665 INFO mapred.LocalJobRunner: Starting task: attempt_local447097606_0014_m_000000_0
+2026-11-04 02:03:26,665 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:26,665 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:26,665 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:26,665 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:26,666 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@526293bb
+2026-11-04 02:03:26,666 INFO pi.DistSum: sigma=[n:value=19,delta=20,limit=519; e:value=984,delta=-20,limit=484]
+2026-11-04 02:03:26,666 INFO pi.DistSum: result=sigma=[n:value=19,delta=20,limit=519; e:value=984,delta=-20,limit=484]value=4592270410763328288, duration=0(0ms)
+2026-11-04 02:03:26,666 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:26,666 INFO mapred.Task: Task:attempt_local447097606_0014_m_000000_0 is done. And is in the process of committing
+2026-11-04 02:03:26,666 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:26,666 INFO mapred.Task: Task attempt_local447097606_0014_m_000000_0 is allowed to commit now
+2026-11-04 02:03:26,667 INFO output.FileOutputCommitter: Saved output of task 'attempt_local447097606_0014_m_000000_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_19.job013/out
+2026-11-04 02:03:26,667 INFO mapred.LocalJobRunner: result=sigma=[n:value=19,delta=20,limit=519; e:value=984,delta=-20,limit=484]value=4592270410763328288, duration=0(0ms)
+2026-11-04 02:03:26,667 INFO mapred.Task: Task 'attempt_local447097606_0014_m_000000_0' done.
+2026-11-04 02:03:26,667 INFO mapred.Task: Final Counters for attempt_local447097606_0014_m_000000_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3949365
+		FILE: Number of bytes written=12892315
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=125
+2026-11-04 02:03:26,667 INFO mapred.LocalJobRunner: Finishing task: attempt_local447097606_0014_m_000000_0
+2026-11-04 02:03:26,667 INFO mapred.LocalJobRunner: Starting task: attempt_local447097606_0014_m_000001_0
+2026-11-04 02:03:26,667 INFO output.PathOutputCommitterFactory: No output committer factory defined, defaulting to FileOutputCommitterFactory
+2026-11-04 02:03:26,667 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2026-11-04 02:03:26,667 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2026-11-04 02:03:26,667 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2026-11-04 02:03:26,668 INFO mapred.MapTask: Processing split: org.apache.hadoop.examples.pi.DistSum$Machine$SummationSplit@3b0ab952
+2026-11-04 02:03:26,668 INFO pi.DistSum: sigma=[n:value=519,delta=20,limit=999; e:value=484,delta=-20,limit=0]
+2026-11-04 02:03:26,668 INFO pi.DistSum: result=sigma=[n:value=519,delta=20,limit=999; e:value=484,delta=-20,limit=0]value=4607076649744570715, duration=0(0ms)
+2026-11-04 02:03:26,668 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:26,668 INFO mapred.Task: Task:attempt_local447097606_0014_m_000001_0 is done. And is in the process of committing
+2026-11-04 02:03:26,668 INFO mapred.LocalJobRunner: 
+2026-11-04 02:03:26,668 INFO mapred.Task: Task attempt_local447097606_0014_m_000001_0 is allowed to commit now
+2026-11-04 02:03:26,669 INFO output.FileOutputCommitter: Saved output of task 'attempt_local447097606_0014_m_000001_0' to file:/tmp/distbbp_equipo5_remote_20261103_200113/P20_19.job013/out
+2026-11-04 02:03:26,669 INFO mapred.LocalJobRunner: result=sigma=[n:value=519,delta=20,limit=999; e:value=484,delta=-20,limit=0]value=4607076649744570715, duration=0(0ms)
+2026-11-04 02:03:26,669 INFO mapred.Task: Task 'attempt_local447097606_0014_m_000001_0' done.
+2026-11-04 02:03:26,669 INFO mapred.Task: Final Counters for attempt_local447097606_0014_m_000001_0: Counters: 15
+	File System Counters
+		FILE: Number of bytes read=3949612
+		FILE: Number of bytes written=12892439
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=1
+		Input split bytes=114
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1023410176
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=124
+2026-11-04 02:03:26,669 INFO mapred.LocalJobRunner: Finishing task: attempt_local447097606_0014_m_000001_0
+2026-11-04 02:03:26,669 INFO mapred.LocalJobRunner: map task executor complete.
+         140956ms (=2:20.956)      : P20_19.job013> timetaken=10.042s
+P20_19.job013> writing results to /tmp/distbbp_equipo5_remote_20261103_200113/P20_19.job013.txt
+DistSum P20_19.job013> sigma=[n:value=19,delta=20,limit=999; e:value=984,delta=-20,limit=0]value=4591424258319754752, duration=0(0ms)
+         140972ms (=2:20.972)      : done
+
+b = 1,000 (bits skipped)
+574E69A458FF 2 (12 hex digits)
